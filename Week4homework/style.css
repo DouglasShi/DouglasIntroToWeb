@@ -1,0 +1,170 @@
+@font-face {
+    font-family: InterBold;
+    src: url(font/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: InterB;
+    src: url(font/Inter/static/Inter-Medium.ttf)
+}
+
+@font-face {
+    font-family: InterS;
+    src: url(font/Inter/static/Inter-Light.ttf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    line-height: 2;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar{
+    position: flex;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: right;
+    margin-right: 35%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    margin:  0 1rem;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: InterB,'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black
+}
+
+.navbar ul li a:hover { 
+    color: rgb(122, 18, 242);
+}
+
+.tagline {
+    font-family: InterS, Arial, Helvetica, sans-serif;
+    position: relative;
+    color: black;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 27%;
+    letter-spacing: 16px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: InterBold, Arial, Helvetica, sans-serif;
+    position: relative;
+    color: black;
+    font-size: 32px;
+    margin-top: 1%;
+    margin-left: 20%;
+}
+
+
+.rectangle1 {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 40%;
+    background-color: rgb(190, 174, 174);
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 0;
+  }
+
+  .rectangle2 {
+    position: relative;
+    top: -35%;
+    left: 26%;
+    width: 48%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.postlist {
+    position: relative;
+    top:2%;
+    left: 10%;
+    font-size: 60px;
+    font-family: InterS,'Times New Roman', Times, serif;
+}
+
+.rectangle3 {
+    position: relative;
+    top: 0.5%;
+    left: 16%;
+    width: 68%;
+    height: 0.2%;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.rectangle4 {
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 78%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.rectangle5 {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 78%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.rectangle6 {
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 78%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    z-index: 1;
+}
