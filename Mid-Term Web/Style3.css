@@ -1,0 +1,125 @@
+@font-face {
+    font-family: InterBold;
+    src: url(font/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: InterB;
+    src: url(font/Inter/static/Inter-Medium.ttf)
+}
+
+@font-face {
+    font-family: InterS;
+    src: url(font/Inter/static/Inter-Light.ttf)
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(font/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: InterB;
+    src: url(font/Inter/static/Inter-Medium.ttf)
+}
+
+@font-face {
+    font-family: InterS;
+    src: url(font/Inter/static/Inter-Light.ttf)
+}
+
+@font-face {
+    font-family: Toledo;
+    src: url(font/Toledo-DemiBold.otf)
+}
+
+@font-face {
+    font-family: AVN;
+    src: url(font/avenir35-light.ttf)
+}
+
+@font-face {
+    font-family: QUT;
+    src: url(font/Cormorant_Garamond/OFL.txt)
+}
+
+@font-face {
+    font-family: POP;
+    src: url(font/Poppins/Poppins-Regular.ttf)
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+body{
+    background-color: white;
+}
+
+
+
+.comment{
+    left: 250px;
+    top: 50px;
+    position: absolute;
+    padding: 0%;
+    margin:0%;
+    background-color:rgb(255, 255, 255);
+    font-family: Toledo, sans-serif;
+}
+
+.comment h2{
+    font: 20px;
+    margin-bottom: 15px;
+    font-family: Toledo, sans-serif;
+}
+
+.comment input{
+    width: 120%;
+    height: 100px;
+    padding: 0 20px ;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-family: Toledo, sans-serif;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgb(0, 0, 0);
+}
+
+
+.comment textarea{
+    width: 120%;
+    height: 300px;
+    padding: 15px 20px ;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-family: Toledo,agran, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-color: rgb(0, 0, 0);
+}
+
+.comment button{
+    border: 0;
+    padding-left: 20px 30px;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    font-family: Toledo, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: white;
+    
+}
+
+.comment button:hover{
+    background-color:white;
+    color:black;
+}
+
+.space{
+    position: absolute;
+    top: 1700px;
+    color: white;
+}
