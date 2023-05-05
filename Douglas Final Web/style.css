@@ -1,0 +1,452 @@
+@font-face {
+    font-family: InterBold;
+    src: url(font/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: InterB;
+    src: url(font/Inter/static/Inter-Medium.ttf)
+}
+
+@font-face {
+    font-family: InterS;
+    src: url(font/Inter/static/Inter-Light.ttf)
+}
+
+@font-face {
+    font-family: Toledo;
+    src: url(font/Toledo-DemiBold.otf)
+}
+
+@font-face {
+    font-family: AVN;
+    src: url(font/avenir35-light.ttf)
+}
+
+@font-face {
+    font-family: QUT;
+    src: url(font/Cormorant_Garamond/OFL.txt)
+}
+
+@font-face {
+    font-family: POP;
+    src: url(font/Poppins/Poppins-Regular.ttf)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    
+}
+
+@media screen and (max-width: 1940px) {
+
+  
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    line-height: 2;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /* scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; */
+}
+
+.navbar{
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-top: 2%;
+    text-align: center;
+    background: rgb(203, 53, 53);
+    color: rgb(182, 42, 42);
+    overflow: hidden;
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.3%;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    margin:  0 1rem;
+    padding: 1rem;
+    font-family: InterBold,'Times New Roman', Times, serif;
+    font-weight:lighter;
+    overflow: hidden;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform:initial;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+
+}
+
+.navbar ul li a:hover { 
+    color: rgb(122, 18, 242);
+}
+
+
+/* Image 1 on the main page */
+.Image1 {
+    position: relative;
+    scale: 1;
+    width: 110%;
+    height: 100%;
+    background-color: rgb(190, 174, 174);
+    border: 2px solid rgb(255, 255, 255);
+    z-index: -1;
+    overflow: hidden;
+    background-image: url('Image/Image1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.logo {
+    position:fixed;
+    left: 0%;
+    scale: 0.6;
+    top: -4%;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.countdown-container {
+    position: flex;
+    text-align: center;
+    padding: 30px;
+    margin-top: -41%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+#countdown {
+    font-size: 13vw;
+    font-weight: bold;
+    color: yellow;
+}
+
+.Next{
+    position: relative;
+    margin-top: -27%;
+    text-align: center;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    font-size: 3.5vw;
+    font-family: InterB,Arial, Helvetica, sans-serif;
+}
+
+.SAC{
+    position: relative;
+    margin-top: 11%;
+    text-align: center;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    font-size: 3.5vw;
+    font-family: InterB,Arial, Helvetica, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+}
+  
+  .button {
+    display: inline-block;
+    margin-top: 5%;
+    padding: 12px 24px;
+    border-radius: 20px;
+    background-color: #e8c600;
+    color: #a50505;
+    font-family: POP,'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    width: calc(60% / 4 - 20px);
+    /* subtract 20px to account for the padding and border-radius */
+  }
+  
+  .button:hover {
+    background-color: #f2d94c;
+  }
+  
+  .button:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .button:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .info-bar {
+    width: 100%;
+    height: 5%;
+    top: 0%;
+    background-color: #8B0000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    padding-left: 10px;
+  }
+  
+  .info-bar .white-text {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 3%;
+    margin-top: -0.5%;
+  }
+  
+  .info-bar .gray-text {
+    color: #999;
+    font-size: 18px;
+    margin-left:1%;
+    margin-top: -0.5%;
+  }
+
+}
+
+/* Add the new styles at the bottom of your existing CSS */
+
+@media screen and (max-width: 992px) {
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        line-height: 2;
+        height: 100vh;
+        overflow-x:hidden;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        scroll-behavior: smooth;
+        
+    }
+    
+    .navbar{
+        position:fixed;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        margin-top: 2%;
+        text-align: center;
+        background: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        
+    }
+    
+    .navbar ul{
+        position: fixed;
+        list-style-type: none;
+        width: 100%;
+        justify-content: center;
+        left: 0px;
+        top: 20px;
+        cursor: pointer;
+    }
+    
+    .navbar ul li {
+        margin:  0 5rem;
+        padding: 1rem;
+        font-family: InterBold,'Times New Roman', Times, serif;
+        font-weight:lighter;
+        overflow: hidden;
+    }
+    
+    .navbar ul li a{
+        text-decoration: none;
+        text-transform:initial;
+        color: rgb(255, 255, 255);
+        font-size: 5px;
+    
+    }
+    
+    .navbar ul li a:hover { 
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    /* Image 1 on the main page */
+    .Image1 {
+        position: relative;
+        scale: 1.1;
+        width: 110%;
+        height: 100%;
+        background-color: rgb(190, 174, 174);
+        border: 2px solid rgb(255, 255, 255);
+        z-index: -1;
+        overflow: hidden;
+        background-image: url('Image/Image1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+    .logo{
+        position:flex;
+        margin-left: 300px;
+        transform: scale(1.5);
+        margin-top: 300px;
+    }
+    
+    .countdown-container {
+        position: flex;
+        text-align: center;
+        padding: 30px;
+        margin-top: -41%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    #countdown {
+        position: absolute;
+        top: 800px;
+        left: 80px;
+        font-size: 20vw;
+        font-weight: bold;
+        color: rgb(255, 242, 0);
+    }
+    
+    .Next{
+        position: absolute;
+        top: 1000px;
+        left: 400px;
+        text-align: center;
+        z-index: 15;
+        color: rgb(255, 255, 255);
+        font-size: 3.5vw;
+        font-family: InterB,Arial, Helvetica, sans-serif;
+        scale: 3.5;
+    }
+    
+    .SAC{
+        position: absolute;
+        top: 1000px;
+        left: 275px;
+        text-align: center;
+        z-index: 3;
+        color: rgb(234, 255, 0);
+        font-size: 5.5vw;
+        font-family: InterB,Arial, Helvetica, sans-serif;
+    }
+    
+    /* .button-container {
+        display: absolute;
+        top: 50px;
+        justify-content: space-evenly;
+        width: 60%;
+        margin: 0 auto;
+      } */
+      
+      .button {
+        display: absolute;
+        top: 800px;
+        padding: 20px 80px;
+        margin: 20px;
+        scale: 1.5;
+        font-size: 2.5vw;
+        border-radius: 20px;
+        background-color: #e8c600;
+        color: #a50505;
+        font-family: POP,'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        z-index: 20;
+        /* subtract 20px to account for the padding and border-radius */
+      }
+      
+      .button:hover {
+        background-color: #f2d94c;
+      }
+      
+      .button:first-child {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      
+      .button:last-child {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      
+      .info-bar {
+        width: 100%;
+        height: 5%;
+        top: 0%;
+        background-color: #8B0000;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        padding-left: 10px;
+      }
+      
+      .info-bar .white-text {
+        color: #fff;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-left: 3%;
+        margin-top: -0.5%;
+      }
+      
+      .info-bar .gray-text {
+        color: #999;
+        font-size: 18px;
+        margin-left:1%;
+        margin-top: -0.5%;
+      }
+}
+  
+
+
+
+
+
+
+
+/* .blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .blog-post {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .blog-post {
+      width: 100%;
+    }
+  }  */

@@ -1,0 +1,302 @@
+@font-face {
+    font-family: InterBold;
+    src: url(font/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: InterB;
+    src: url(font/Inter/static/Inter-Medium.ttf)
+}
+
+@font-face {
+    font-family: InterS;
+    src: url(font/Inter/static/Inter-Light.ttf)
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(font/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: InterB;
+    src: url(font/Inter/static/Inter-Medium.ttf)
+}
+
+@font-face {
+    font-family: InterS;
+    src: url(font/Inter/static/Inter-Light.ttf)
+}
+
+@font-face {
+    font-family: Toledo;
+    src: url(font/Toledo-DemiBold.otf)
+}
+
+@font-face {
+    font-family: AVN;
+    src: url(font/avenir35-light.ttf)
+}
+
+@font-face {
+    font-family: QUT;
+    src: url(font/Cormorant_Garamond/OFL.txt)
+}
+
+@font-face {
+    font-family: POP;
+    src: url(font/Poppins/Poppins-Regular.ttf)
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.info-bar {
+    width: 100%;
+    height: 5%;
+    top: 0%;
+    background-color: #8b0000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    padding-left: 10px;
+    z-index: 5;
+  }
+  
+  .info-bar .white-text {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 3%;
+    margin-top: -0.5%;
+    font-family: POP,'Courier New', Courier, monospace;
+  }
+  
+  .info-bar .gray-text {
+    color: #999;
+    font-size: 18px;
+    margin-left:1%;
+    margin-top: -0.5%;
+    font-family: POP,'Courier New', Courier, monospace;
+  }
+
+.navbar{
+    position:fixed;
+    top: 0;
+    z-index: 8;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-top: 2%;
+    text-align: center;
+    background: rgb(203, 53, 53);
+    color: rgb(182, 42, 42);
+    overflow: hidden;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    margin-left: -15%;
+    margin-top: 0.3%;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    margin:  0 1rem;
+    padding: 1rem;
+    font-family: InterBold,'Times New Roman', Times, serif;
+    font-weight:lighter;
+    overflow: hidden;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform:initial;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+
+}
+
+.navbar ul li a:hover { 
+    color: rgb(122, 18, 242);
+}
+
+.logo {
+    position:fixed;
+    left: 0%;
+    scale: 0.6;
+    top: -4%;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.news-top{
+    margin-top: 5%;
+    margin-left: 22%;
+    margin-bottom: 5%;
+    font-size: 3vw;
+    display: flex;
+    font-family: POP,'Courier New', Courier, monospace;
+    color: rgb(161, 29, 29);
+}
+
+.match-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: POP,'Courier New', Courier, monospace;
+}
+  
+.match-info img {
+    width: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+  
+.match-info .team {
+    width: 100px;
+    font-family: Teloda,'Courier New', Courier, monospace;
+    font-size: 1vw;
+    color: white;
+    
+}
+  
+.match-info .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+    font-family: InterB,'Courier New', Courier, monospace;
+    color: white;
+}
+  
+  .match-info .score span {
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .goal-info {
+    display:inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: POP,'Courier New', Courier, monospace;
+    color: rgb(243, 255, 8);
+  }
+  
+.goal-info p {
+    margin: 1vw 2vh;
+}
+  
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 8% auto;
+    padding: 10px;
+    border: 2px solid rgb(221, 221, 221);
+    background-color: #9c0101d9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(78, 77, 77);
+    scale: 1.4;
+    margin-bottom: 15%;
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box:first-of-type {
+    margin-top: -30px;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+font-size: 14px;
+position: flex;
+bottom: 0;
+width: 100%;
+margin-top: 10%;
+}
+
+@media (max-width: 968px) {
+    .info-bar .white-text,
+    .info-bar .gray-text {
+      font-size: 14px;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+    
+    .navbar ul li a {
+      font-size: 12px;
+    }
+  
+    .news-top {
+      margin-top: 10%;
+      margin-left: 5%;
+      font-size: 6vw;
+    }
+  
+    .box {
+      width: 80%;
+      margin: 5% auto;
+      scale: 1;
+      margin-bottom: 10%;
+      scale: 0.7;
+    }
+  
+    .match-info .team {
+      font-size: 4vw;
+      scale: 0.7;
+      color: black;
+    }
+  
+    .match-info .score {
+      font-size: 25px;
+      color: black;
+    }
+
+    .logo{
+        scale: 0.1;
+        margin-top: 200%;
+    }
+  
+    .goal-info {
+      font-size: 5px;
+      scale: 0.7;
+      visibility: hidden;
+      color: black;
+    }
+  
+    .goal-info p {
+      margin: 1vw 1vh;
+      color: black;
+    }
+  }
+  
